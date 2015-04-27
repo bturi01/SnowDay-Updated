@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You Are In Tab 1"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" /-->
+
+    <TextView
+        android:id="@+id/cityText"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/tempStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    <TextView
+        android:id="@+id/skydesc"
+        android:layout_width="wrap_content"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_alignStart="@id/temp"
+        android:layout_toRightOf="@id/temp">
+    </TextView>
+
+    <!--  Image weather condition -->
+    <ImageView android:id="@+id/condIcon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</RelativeLayout>
